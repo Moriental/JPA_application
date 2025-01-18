@@ -14,7 +14,7 @@ public class ItemRepository {
 
     public void save(Item item){
         if(item.getId() == null){
-            em.persist(item);
+            em.persist(item); //id가 없으면 새걸로 인식해서 persist
         }else{
             em.merge(item);
         }

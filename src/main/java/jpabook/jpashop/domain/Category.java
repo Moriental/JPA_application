@@ -35,7 +35,5 @@ public class Category {
     public void addChildCategory(Category child) {
        this.child.add(child);
        child.setParent(this);
-
     }
-
 }
